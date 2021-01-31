@@ -5,10 +5,14 @@ import java.util.concurrent.TimeUnit;
 public class Execute {
 
     public static void main (String[]args) throws InterruptedException {
-        getTemps("Fort Ann");
-        questions(3);
+       // getTemps("Fort Ann");
+       // questions(3);
+
+        System.out.println("hello world");
+
 
     }
+    /*
 
     private static void getTemps(String city){
         String website = "darksky.com";
@@ -32,4 +36,5 @@ public class Execute {
         driver.get(website);
 
     }
+    */
 }
