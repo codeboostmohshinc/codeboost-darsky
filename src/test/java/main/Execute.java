@@ -10,12 +10,11 @@ import java.util.concurrent.TimeUnit;
 
 public class Execute {
 
-    public static void main (String[]args) throws InterruptedException {
-       getTemps("Fort Ann");
-      //questions(3);
-
-
-
+    public static void main (String[]args)  throws InterruptedException {
+        //getTemps("Fort Ann");
+        //questions(3);
+        System.out.print(System.getProperty("user.dir"));
+    }
 
     private static void getTemps(String city){
             String website = "darksky.com";
@@ -47,6 +46,9 @@ public class Execute {
             driver.findElement(By.xpath(helpPageButton)).click();
             System.out.print(driver.findElement(By.xpath(question2)).getText());
             driver.quit();
+
+    }
+
 
     }
 
