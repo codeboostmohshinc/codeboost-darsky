@@ -20,7 +20,8 @@ public class Execute {
             String website = "darksky.com";
             String searchButton = "//a[@class='searchbutton" ;
             String textBox= "//input[@type='text]";
-            System.setProperty("webdriver.chrome.driver", System.getProperty("Users/adibm/Desktop/workspace/modules/newhomework/src/test/resources/chromedriver");
+            System.setProperty("webdriver.chrome.driver", System.getProperty("/src/test/resources/chromedriver"));
+
             WebDriver driver= new ChromeDriver();
             driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
             driver.get(website);
